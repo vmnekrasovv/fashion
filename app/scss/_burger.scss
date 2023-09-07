@@ -9,7 +9,8 @@
 	cursor: pointer;
 
 	@media screen and (max-width: 767px) {
-		display: block;
+		display: flex;
+		align-self: center;
 	}
 
 	&__element {
@@ -18,7 +19,7 @@
 		position: absolute;
 		top: 9px;
 		left: 0;
-		background-color: #fff;
+		background-color: #333;
 	}
 
 	&:before,
@@ -27,7 +28,7 @@
 		height: 2px;
 		position: absolute;
 		left: 0;
-		background-color: #fff;
+		background-color: #333;
 		transition: .3s;
 		content: '';
 	}
@@ -38,15 +39,18 @@
 	&.active:before {
 		transform: rotate(45deg);
 		top: 9px;
+		background: #555;
 	}
 
 	&.active:after {
 		transform: rotate(-45deg);
 		bottom: 9px;
+		background: #555;
 	}
 
 	&.active span {
 		display: none;
+		background: #555;
 	}
 
 } // burger
