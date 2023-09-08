@@ -86,7 +86,9 @@ function styles() {
 function images() {
 	return src(paths.images.src)
 	.pipe(newer(paths.images.dest))
-	.pipe(imagemin())
+	.pipe(imagemin([
+		imagemin.mozjpeg({quality: 100, progressive: true})
+	]))
 	.pipe(dest(paths.images.dest))
   .pipe(browserSync.stream())
 }
