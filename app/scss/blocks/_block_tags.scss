@@ -1,0 +1,26 @@
+.block-tags {
+
+	@media screen and (min-width: 577px) and (max-width: 1211px) {
+		width: 30%;
+	}
+
+	&-elements {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		justify-content: center;
+	}
+
+	&__tag {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+
+		font-family: 'pt_serif_lat_400';
+		font-size: 14px;
+		color: #555;
+		padding: 7px 12px;
+		background: #F8F9FA;
+	}
+}

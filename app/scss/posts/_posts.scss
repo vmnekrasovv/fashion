@@ -68,6 +68,14 @@
 		margin-bottom: 70px;
 	}
 
+	.block-6,
+	.block-7,
+	.block-8 {
+		@media screen and (max-width: 576px) {
+			margin-bottom: 20px;
+		}
+	}
+
 	.post-link {
 		display: block;
 		text-decoration: none;
@@ -116,6 +124,7 @@
 
 		@media screen and (max-width: 1210px) {
 			flex-direction: row;
+			gap: 30px;
 		}
 
 		@media screen and (max-width: 576px) {
