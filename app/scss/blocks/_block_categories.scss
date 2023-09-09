@@ -1,0 +1,27 @@
+.block-categories {
+
+	&__category {
+		display: flex;
+		justify-content: space-between;
+		text-decoration: none;
+		font-family: 'pt_serif_lat_400';
+		font-size: 14px;
+		color: #555;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #e5e5e5;
+
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+
+		@media screen and (min-width: 577px) {
+			flex-basis: 0 0 1;
+		}
+	}
+}

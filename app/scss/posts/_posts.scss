@@ -110,6 +110,18 @@
 		justify-content: center;
 	}
 
+	.category-social-tags {
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (max-width: 1210px) {
+			flex-direction: row;
+		}
+
+		@media screen and (max-width: 576px) {
+			flex-direction: column;
+		}
+	}
 
 /* small-posts */
 
