@@ -1,0 +1,39 @@
+.instagram {
+	
+	margin-bottom: 100px;
+
+	@media screen and (max-width: 992px) {
+		margin-bottom: 70px;
+	}
+
+	@media screen and (max-width: 769px) {
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		display: flex;
+		gap: 18px;
+		padding: 0 18px;
+		justify-content: space-between;
+
+		@media screen and (max-width: 1210px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__element {
+		width: calc(16.5% - 15px);
+
+		@media screen and (max-width: 992px) {
+			width: calc(33% - 10px);
+		}
+
+		@media screen and (max-width: 769px) {
+			width: calc(50% - 10px);
+		}
+
+		@media screen and (max-width: 420px) {
+			width: 100%;
+		}
+	}
+}

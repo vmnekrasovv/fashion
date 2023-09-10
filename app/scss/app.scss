@@ -29,6 +29,16 @@ body.lock {
 	}
 }
 
+h2 {
+	font-family: 'pt_serif_lat_400';
+	font-size: 24px;
+	color: #171717;
+	font-weight: 400;
+	text-align: center;
+	padding: 0 20px;
+	margin-bottom: 40px;
+}
+
 @import 'burger';
 
 @import 'header/header';
@@ -42,3 +52,7 @@ body.lock {
 @import 'blocks/block_tags';
 
 @import 'pagination';
+
+@import 'instagram';
+
+@import 'footer';
