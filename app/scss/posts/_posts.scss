@@ -60,6 +60,14 @@
 		}
 	}
 
+	.block-4, .block-5 {
+		.posts-block-title {
+			@media screen and (max-width: 1210px) {
+				margin-bottom: 40px;
+			}		
+		}
+	}
+
 	.block-4,
 	.block-5,
 	.block-6,
