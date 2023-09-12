@@ -41,8 +41,27 @@
 				}
 			}
 
+			@media screen and (min-width: 767px) {
+			
+				&:after {
+					content: "";
+				    display: block;
+				    width: 100%;
+				    height: 3px;
+				    border-bottom: 1px solid #fff;
+				    transition: .4s;
+				}
+
+				&:hover {
+
+					&:after {
+						border-bottom: 1px solid #dbb062;
+					}
+				}
+			}
+
 			&.active {
-				color: #C9A96E;
+				color: #dbb062;
 			}
 		}
 	} // footer-menu
@@ -66,7 +85,7 @@
 			transition: .3s;
 
 			&:hover {
-				border: 1px solid #C9A96E;
+				border: 1px solid #dbb062;
 
 			}
 		}

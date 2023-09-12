@@ -22,5 +22,14 @@
 		color: #555;
 		padding: 7px 12px;
 		background: #F8F9FA;
+
+		border: 1px solid #e5e5e5;
+
+		transition: .3s;
+
+		&:hover {
+			border: 1px solid #b5b5b5;
+
+		}
 	}
 }

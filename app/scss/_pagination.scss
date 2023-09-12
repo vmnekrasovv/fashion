@@ -32,6 +32,13 @@
 		}
 	}
 
+	a.pagination__page {
+		&:hover {
+			transition: .3s;
+			color: #dbb062;
+		}
+	}
+
 	.older-next-post {
 		display: block;
 		position: relative;
@@ -58,8 +65,23 @@
 			top: 10px;
 		}
 
+		cursor: default;
+		transition: .3s;
+
 		&.active {
 			color: #171717;
+
+			cursor: pointer;
+
+			&:hover {
+				color: #dbb062;
+
+				&:before,
+				&:after {
+					transition: .5s;
+					background: #dbb062;
+				}
+			}
 		}
 	}
 

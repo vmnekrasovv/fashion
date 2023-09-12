@@ -31,6 +31,27 @@
 		font-size: 16px;
 		color: #171717;
 		text-decoration: none;
+		
+		@media screen and (min-width: 767px) {
+			
+			&:after {
+				content: "";
+			    display: block;
+			    width: 100%;
+			    height: 3px;
+			    border-bottom: 1px solid #fff;
+			    transition: .4s;
+			}
+
+			&:hover {
+
+				&:after {
+					border-bottom: 1px solid #dbb062;
+				}
+			}
+		}
+
+		
 
 		@media screen and (max-width: 767px) {
 			color: #fff;
@@ -51,7 +72,7 @@
 		}
 
 		&.active {
-			color: #C9A96E;
+			color: #dbb062;
 		}
 	}
 }

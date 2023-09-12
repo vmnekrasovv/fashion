@@ -42,6 +42,11 @@
 
 	.block-post {
 		box-shadow: 0 0 3px 2px #eee;
+		transition: .3s;
+
+		&:hover {
+			box-shadow: 0 0 3px 2px #ddd;
+		}
 	}
 
 	.posts-block-title {
