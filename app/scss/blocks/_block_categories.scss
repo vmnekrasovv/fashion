@@ -1,6 +1,10 @@
 .block-categories {
 
-	@media screen and (min-width: 577px) and (max-width: 1211px) {
+	@media screen and (min-width: 577px) and (max-width: 768px) {
+		width: 35%;
+	}
+
+	@media screen and (min-width: 769px) and (max-width: 1211px) {
 		width: 40%;
 	}
 

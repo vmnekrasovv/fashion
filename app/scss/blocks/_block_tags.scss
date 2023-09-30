@@ -1,6 +1,10 @@
 .block-tags {
 
-	@media screen and (min-width: 577px) and (max-width: 1211px) {
+	@media screen and (min-width: 577px) and (max-width: 768px) {
+		width: 35%;
+	}
+
+	@media screen and (min-width: 769px) and (max-width: 1211px) {
 		width: 30%;
 	}
 
@@ -26,6 +30,10 @@
 		border: 1px solid #e5e5e5;
 
 		transition: .3s;
+
+		@media screen and (min-width: 577px) and (max-width: 1211px) {
+			width: calc(50% - 5px);
+		}
 
 		&:hover {
 			border: 1px solid #b5b5b5;
