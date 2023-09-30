@@ -1,5 +1,7 @@
 .instagram {
 	
+	position: relative;
+
 	margin-bottom: 100px;
 
 	@media screen and (max-width: 992px) {
@@ -10,7 +12,68 @@
 		margin-bottom: 50px;
 	}
 
-	&__list {
+	.slick-arrow {
+		width: 10%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	.slick-prev {
+		left: 0;
+	}
+
+	.slick-next {
+		right: 0;
+	}
+
+	.slick-prev:after,
+	.slick-next:after {
+		content: '';
+		display: block;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: calc(50% - 15px);
+		border-left: 3px solid rgba(255,255,255,.7);
+		border-top: 3px solid rgba(255,255,255,.7);
+	
+		&:hover {
+			border-left: 3px solid rgba(255,255,255,1);
+			border-top: 3px solid rgba(255,255,255,1);
+		}
+	}
+
+	.slick-prev:after {
+		left: 30%;
+		transform: rotate(-45deg);
+
+		@media screen and (max-width: 768px) {
+			left: 40%;
+		}
+	}
+
+	.slick-next:after {
+		right: 30%;
+		transform: rotate(135deg);
+
+		@media screen and (max-width: 768px) {
+			right: 40%;
+		}
+	}
+
+	.slick-slide {
+		padding: 0 5px;
+		cursor: pointer;
+
+		@media screen and (max-width: 576px) {
+			padding: 0 15px;
+		}
+	}
+
+	/* &__list {
 		display: flex;
 		gap: 18px;
 		padding: 0 18px;
@@ -35,5 +98,5 @@
 		@media screen and (max-width: 420px) {
 			width: 100%;
 		}
-	}
+	} */
 }
